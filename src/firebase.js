@@ -3,14 +3,16 @@ import { getAuth, signOut, GoogleAuthProvider, signInWithPopup } from "firebase/
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore, setDoc, doc, getDoc } from "firebase/firestore";
 
+
 const firebaseConfig = {
-    apiKey: "AIzaSyBw6WNvOrQURD9slu7bX5jkCX6hGhsAJnc",
-    authDomain: "rickandmorty-reactredux.firebaseapp.com",
-    projectId: "rickandmorty-reactredux",
-    storageBucket: "rickandmorty-reactredux.appspot.com",
-    messagingSenderId: "689062248984",
-    appId: "1:689062248984:web:555804545b5dd94d83b96d",
-    measurementId: "G-DZEBRERPRS"
+    apiKey: "API_KEY",
+    authDomain: "PROJECT_ID.firebaseapp.com",
+    databaseURL: "https://DATABASE_NAME.firebaseio.com",
+    projectId: "PROJECT_ID",
+    storageBucket: "PROJECT_ID.appspot.com",
+    messagingSenderId: "SENDER_ID",
+    appId: "APP_ID",
+    measurementId: "G-MEASUREMENT_ID",
 };
 
 const app = initializeApp(firebaseConfig);
